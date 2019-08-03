@@ -1,1 +1,33 @@
 // Mixins Here
+
+//center container in body tag
+
+.center-container() {
+    width: 90%; 
+}
+
+.center-mobile() {
+    display:flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-style(@background-color, @color, @width){
+    background-color: @btn-bg-color;
+    border-radius: 5px;
+    color: @porcelain;
+    padding-top:3%;
+    padding-bottom: 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: @width;
+
+    &:hover {
+        background-color: @porcelain;
+        color: @btn-bg-color;
+
+    }
+}

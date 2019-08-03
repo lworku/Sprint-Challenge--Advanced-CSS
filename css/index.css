@@ -155,10 +155,44 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+.nav-wrapper .nav {
+  font-size: 0.5rem;
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  width: 100%;
+}
+.nav-wrapper .nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.nav-wrapper .nav a {
+  text-decoration: none;
+  font-size: 1.9rem;
+  font-family: #454A59;
+  color: black;
+}
+@media ( max-width: 500px) {
+  .nav-wrapper {
+    width: 100%;
+  }
+  .nav-wrapper .nav {
+    justify-content: space-around;
+    width: 75%;
+  }
+  .nav-wrapper .nav a {
+    font-size: 1.4rem;
+  }
 }
 footer {
   color: #22283B;
@@ -170,11 +204,24 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.nav-wrapper .nav-header {
+  font-size: 4rem;
+  padding: 2%;
+}
+.nav-wrapper .nav {
+  padding-bottom: 1.5%;
+}
+.container {
+  width: 90%;
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
@@ -212,6 +259,22 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  border-radius: 5px;
+  color: #F6F7F8;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 30%;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -220,4 +283,57 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media ( max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .container .planet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 15px;
+  }
+  .home .walk .walk-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+  }
+  .home .walk .walk-text {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    background-color: #22283A;
+    border-radius: 5px;
+    color: #F6F7F8;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+  }
+  .home .walk .walk-text .btn:hover {
+    background-color: #F6F7F8;
+    color: #22283A;
+  }
 }
