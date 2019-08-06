@@ -1,1 +1,43 @@
 // Navigation code here
+
+.nav-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: @nav-bg;
+    width: 100%;
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+
+        a {
+            text-decoration: none;
+            font-size: 1.9rem;
+            font-family: @river-bend;
+            color: black;
+
+        } 
+
+    }
+
+}
+
+@media @phone {
+    .nav-wrapper {
+        width: 100%;
+      .nav {
+          justify-content: space-around;
+          width: 75%;
+
+          a {
+            font-size: 1.4rem;
+          }
+        
+      }
+    }
+  }
+
+
